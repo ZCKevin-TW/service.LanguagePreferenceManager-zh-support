@@ -15,7 +15,7 @@ LANGUAGES      = (
     ("Bosnian"                    , "10",       "bs",            "bos",                 "3",                     30204  ),
     ("Bulgarian"                  , "33",       "bg",            "bul",                 "4",                     30205  ),
     ("Catalan"                    , "53",       "ca",            "cat",                 "5",                     30206  ),
-    ("Chinese"                    , "17",       "zh",            "chi",                 "6",                     30207  ),
+    ("Chinese (Simplified)"    , "17",      "zh-cn",    "zh,chi,zho,chs,zhs,simplified,簡體,简体", "6",         30207  ),
     ("Croatian"                   , "38",       "hr",            "hrv",                 "7",                     30208  ),
     ("Czech"                      , "7",        "cs",            "cze",                 "8",                     30209  ),
     ("Danish"                     , "24",       "da",            "dan",                 "9",                     30210  ),
@@ -57,13 +57,15 @@ LANGUAGES      = (
     ("English Middle"             , "2",        "",              "enm",                 "47",                    30248  ),
     ("Norwegian Bokmal"           , "3",        "nb",            "nob",                 "48",                    30249  ),
     ("New Norwegian"              , "3",        "nn",            "nno",                 "49",                    30250  ),
+    ("Chinese (Traditional)"   , "17",      "zh-tw",    "zh-tw,chi,zho,cht,zht,traditional,繁體",      "51",        30251  ),
     ("None"                       , "-1",       "",              "non",                 "45",                    30200  ),
     ("Any"                        , "-2",       "",              "any",                 "46",                    30300  ),
     ("Undefined"                  , "-3",       "",              "und",                 "50",                    30350  ) )
 
 def languageTranslate(lang, lang_from, lang_to):
   for x in LANGUAGES:
-    codes = x[lang_from].split(r',')
+    codes = x[lang_from].lower().split(r',')
     for code in codes:
-      if lang == code :
+      if lang.lower() == code :
         return x[lang_to]
+

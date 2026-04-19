@@ -218,7 +218,7 @@ msgid "Catalan"
 msgstr ""
 
 msgctxt "#30207"
-msgid "Chinese"
+msgid "Chinese (Simplified)"
 msgstr ""
 
 msgctxt "#30208"
@@ -383,6 +383,10 @@ msgstr ""
 
 msgctxt "#30250"
 msgid "New Norwegian"
+msgstr ""
+
+msgctxt "#30251"
+msgid "Chinese (Traditional)"
 msgstr ""
 
 msgctxt "#30200"
