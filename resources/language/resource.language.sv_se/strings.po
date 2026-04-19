@@ -231,7 +231,7 @@ msgid "Catalan"
 msgstr "Katalanska"
 
 msgctxt "#30207"
-msgid "Chinese"
+msgid "Chinese Simplified"
 msgstr "Kinesiska"
 
 msgctxt "#30208"
@@ -397,6 +397,10 @@ msgstr "Norska bokmål"
 msgctxt "#30250"
 msgid "New Norwegian"
 msgstr "Nynorska"
+
+msgctxt "#30251"
+msgid "Chinese (Traditional)"
+msgstr "繁體中文"
 
 msgctxt "#30200"
 msgid "None"
